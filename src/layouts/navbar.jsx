@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { CircleUser, Menu, Package2 } from "lucide-react";
+import { CircleUser, Menu, Package2, Home } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
 import { navItems } from "../App";
 
@@ -35,7 +35,11 @@ const DesktopNav = () => (
       className="flex items-center gap-2 text-lg font-semibold md:text-base"
     >
       <Package2 className="h-6 w-6" />
-      <span className="sr-only">Bare Bones App</span> {/* Updated app name */}
+      <span className="sr-only">Trading Journal</span> {/* Updated app name */}
+    </NavItem>
+    <NavItem to="/trading-journal" className="flex items-center gap-2 text-lg font-semibold md:text-base">
+      <Home className="h-4 w-4" /> {/* Placeholder icon */}
+      Trading Journal
     </NavItem>
     {navItems.map((item) => (
       <NavItem key={item.to} to={item.to}>
@@ -60,7 +64,11 @@ const MobileNav = () => (
           className="flex items-center gap-2 text-lg font-semibold"
         >
           <Package2 className="h-6 w-6" />
-          <span className="sr-only">Bare Bones App</span> {/* Updated app name */}
+          <span className="sr-only">Trading Journal</span> {/* Updated app name */}
+        </NavItem>
+        <NavItem to="/trading-journal" className="flex items-center gap-2 text-lg font-semibold">
+          <Home className="h-4 w-4" /> {/* Placeholder icon */}
+          Trading Journal
         </NavItem>
         {navItems.map((item) => (
           <NavItem key={item.to} to={item.to}>
