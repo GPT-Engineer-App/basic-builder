@@ -1,25 +1,20 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-const Index = () => {
+const About = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4">
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle>Welcome to Your Dashboard</CardTitle>
+          <CardTitle>About This Application</CardTitle>
         </CardHeader>
         <CardContent>
           <p className="text-center">
-            This is a bare-bones application that you can modify and build upon.
+            This is a placeholder for the About page. You can add more information about your application here.
           </p>
-          <div className="mt-4 p-4 border rounded-lg">
-            <p className="text-center text-muted-foreground">
-              Placeholder for your content.
-            </p>
-          </div>
         </CardContent>
       </Card>
     </div>
   );
 };
 
-export default Index;
+export default About;
